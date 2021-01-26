@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Workflow Designer · TOMEs 7</title>
+
+    <!-- Bootstrap core CSS -->
+	<link href="dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="dist/css/events.css" rel="stylesheet">
+
+	</head>
+
+
+	<body>
+        <div id="TrimaScreen" style="">
+
+        	<div class="TSevent">
+        		<div id="title"></div>
+	            <div id="message"></div>
+	            <div class="options">
+					<ul>
+					    <li id="btn1" class=""></li>
+					    <li id="btn2" class=""></li>
+					    <li id="btn3" class=""></li>
+					    <li id="btn4" class=""></li>
+					    <li id="btn5" class=""></li>
+					</ul>
+	            </div>
+        	</div>
+
+        </div>
+    </body>
+
+
+    <script>
+        //Get URL Info
+            //url?title=POPUP_TITLE&message=POPUP_MESSAGE&btn#=POPUP_BTN-TEXT
+            // Example: ?title=There%20was%20any%20incident%20during%20the%20procedure&message=Please,%20Inform%20if%20any%20incident%20occurred%20during%20the%20blood%20donation,%20and%20the%20text%20continue%20just%20to%20exemplify%20the%20system&btn1=No&btn3=Yes&btn4=Severe&btn5=Death&btn2=Slight
+        var url         = new URL(window.location.href);
+        var urlLg       = url.searchParams.get("lg");
+        var urlId    	= url.searchParams.get("id");
+        var urlTitle    = url.searchParams.get("title");
+        var urlMessage  = url.searchParams.get("message");
+        var urlBtn1     = url.searchParams.get("btn1");
+        var urlBtn2     = url.searchParams.get("btn2");
+        var urlBtn3     = url.searchParams.get("btn3");
+        var urlBtn4     = url.searchParams.get("btn4");
+        var urlBtn5     = url.searchParams.get("btn5");
+
+        //Define Background
+            var bgTrima = urlId;
+            document.getElementById("TrimaScreen").style.backgroundImage = 'url("img/'+urlLg+'/'+bgTrima+'.png")';
+
+        //Popup info
+            var event = {
+                title: urlTitle,
+                message: urlMessage,
+            };
+            
+            //Impruve this code!!
+                if(urlBtn1 != null) {event["btn1"] = urlBtn1;} else {event["btn1"] = ""}
+                if(urlBtn2 != null) {event["btn2"] = urlBtn2;} else {event["btn2"] = ""}
+                if(urlBtn3 != null) {event["btn3"] = urlBtn3;} else {event["btn3"] = ""}
+                if(urlBtn4 != null) {event["btn4"] = urlBtn4;} else {event["btn4"] = ""}
+                if(urlBtn5 != null) {event["btn5"] = urlBtn5;} else {event["btn5"] = ""}
+
+            document.getElementById("title").innerHTML = event["title"];
+            document.getElementById("message").innerHTML = event["message"];
+
+
+            //Btn Screen
+                var i = 1;
+                var x = 5;
+
+                var btnName;
+
+                while(i <= x){
+                    btnName = "btn"+i;
+
+                    if(event[btnName] != "") {
+                        var botao = document.getElementById(btnName);
+                        botao.innerHTML = event[btnName];
+                        botao.classList.add("active");
+                    }
+
+                    i += 1;
+                }
+
+    </script>
+
+</html>
