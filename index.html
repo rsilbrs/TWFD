@@ -9,21 +9,93 @@
     <title>Trima Workflow Designer</title>
     
     <!-- Bootstrap core CSS -->
-        <link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="main/css/bootstrap.css" rel="stylesheet">
+    <!-- FontAwesome core CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Custom CSS -->
+        <link href="main/css/style.css" rel="stylesheet">    
 
-    <!-- Language definitions -->
-        <script src="assets/dist/js/languages.js"></script>
 </head>
 
 <body>
 
+    <main class="container">
+
+        <div class="row">
+            <div class="col-3">
+                Trima Workflow Designer
+            </div>
+            <div class="col-9">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mainSec">
+                <span class="section Title">Available Events</span>
+
+                <div class="events barcode">
+                    <span class="group Title">Barcode Events</span>
+
+                    <div id="Barcode" class="events itens">
+                        <div class="eventItem" id="event1" onclick="modalEvent(this.id)" data-toggle="" data-target="#modalEvent1">
+                            <span class="title"><i class="fas fa-barcode"></i> Lote ACD-A</span>
+                            <span class="comment">Please, inform the ACD-A lote number</span>
+                        </div>
+                        <div class="eventItem">
+                            <span class="title"><i class="fas fa-barcode"></i> Donor ID</span>
+                            <span class="comment">Please, scan the Donor Identification</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="events info">
+                    <span class="group Title">Info Events</span>
+
+                    <div id="Info" class="events itens">
+                        <div class="eventItem">
+                            <span class="title"><i class="far fa-hand-pointer"></i> Lote ACD-A</span>
+                            <span class="comment">Please, inform the ACD-A lote number</span>
+                        </div>
+                        <div class="eventItem">
+                            <span class="title"><i class="far fa-hand-pointer"></i> Donor ID</span>
+                            <span class="comment">Please, scan the Donor Identification</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-1"></div> <!-- spacer between columns-->
+
+            <div class="col-7 mainSec">
+                <span class="section Title">Program flow</span>
+
+                <div id="stepsProcedure">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Modal -->
+            <div id="modalProcedure"></div>
+            <div id="modalEvent"></div>
+
+    </main>
+
     <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="assets/dist/js/bootstrap.min.js"></script>
-	<script src="assets/dist/js/bootstrap.bundle.js"></script>
-	<script src="assets/dist/js/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-	<script src='assets/dist/js/jquery.min.js'></script>
-    <script src='assets/dist/js/jquery-ui.min.js'></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="main/js/bootstrap.min.js"></script>
+        <script src="main/js/bootstrap.bundle.js"></script>
+        <script src="main/js/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+    <!-- Latest Sortable -->
+        <script src="main/js/Sortable.js"></script>
+
+    <!-- Custom Script -->
+        <script src='main/js/Procedures.js'></script>
+        <script src='main/js/MovementEvents.js'></script>
+        <script src='main/js/DragDrop.js'></script>
 
 </body>
 </html>
