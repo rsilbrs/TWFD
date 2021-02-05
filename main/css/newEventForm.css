@@ -1,0 +1,99 @@
+/*Style of buttom to create new event*/
+.newEvent{
+    display: block;
+    margin:5px;
+}
+
+/*Form New Event*/
+.newEvent{
+    display:block;
+
+    background-color: #DFE8F6;
+
+    text-align: center;
+    
+    padding:10px;
+    margin:0;
+}
+
+.newEvent button, .newEventBtn{
+    background-color:#CED9E7;
+    background-image: linear-gradient(#FDFDFD 50%, #E5E5E5 50%);
+
+    border:1px solid #D0D1D2;
+    border-radius: 5px;
+    color:#04408C;
+    font-size: 13px;
+    font-weight: bold;
+
+    width:100%;
+
+    padding:10px 0;
+}
+
+.newEvent button:hover{
+    background-color:#DFE9F6;
+
+    color:#04408C;
+    border-color:#A6C3E7;
+}
+
+.newEvent button:focus{
+    background-color:#DFE9F6;
+
+    color:#04408C;
+    border:1px solid #D0D1D2;
+
+    box-shadow: none;
+}
+
+#NewEvent .mainSec{
+    background:#E1EBF7;
+    display: block;
+}
+
+.formEvent{
+    display: block;
+    padding:20px 10px;
+}
+
+.formEvent .newSection{
+    height:50px;
+}
+
+.formEvent label{
+    font-size: 13px;
+    color:#04408C;
+    font-weight: bold;
+    text-align: right;
+}
+
+.formEvent input, .formEvent select{
+    padding:8px 5px;
+    margin-top: 0px;
+    border:1px solid #bbb;
+    border-radius: 5px;
+
+    font-size:13px;
+    color:#333;
+}
+input.center{
+    text-align:center;
+    margin:0 2px;
+}
+
+.newEventDescription{
+    text-align: left;
+    font-size: 13px;
+    padding:10px 20px;
+    line-height: 20px;
+}
+
+.newEventBtn{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.hidden{
+    display: none;
+}

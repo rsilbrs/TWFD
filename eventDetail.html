@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Ricardo Silva"/>
+    <meta name="keywords" content="Trima, Trima Accel, TOMEs">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+
+    <title>Trima Workflow Designer</title>
+
+    <link href="main/css/eventDetail.css" rel="stylesheet">
+</head>
+
+<bod>
+
+    <main id="backgroundProcedure" class="backgroundProcedure">
+        <div class="eventProcedure">
+            <span class="eventTitle" id ="eventTitle"></span>
+            <span class="eventMessage" id="eventMessage"></span>
+            <span class="eventButton" id="eventButton"></span>
+        </div>
+    </main>
+</body>
+<script>
+    //Definitions
+        var eventBtn = '';
+        var hidenBtn = '';
+        var countBtn = 0;
+
+    //Get informations from URL
+        var url                 = new URL(window.location.href);
+        var procedureStep       = url.searchParams.get("Step");
+        var eventName           = url.searchParams.get("Name");
+        var eventDescription    = url.searchParams.get("Description");
+        var eventClass          = url.searchParams.get("Class");
+        var language            = url.searchParams.get("Lg");
+
+        var Btn1               = url.searchParams.get("Btn1");
+        var Btn2               = url.searchParams.get("Btn2");
+        var Btn3               = url.searchParams.get("Btn3");
+        var Btn4               = url.searchParams.get("Btn4");
+        var Btn5               = url.searchParams.get("Btn5");
+
+        var timerMM            = url.searchParams.get("timerMM");
+        var timerSS            = url.searchParams.get("timerSS");
+    //Define Background
+        document.getElementById("backgroundProcedure").style = 'background-image: url("main/imgs/'+language+'/'+procedureStep+'.png")';
+    //Chech Button events
+        if(eventClass == 'Info'){
+            eventBtn += '<ul>';
+
+            for(var i=1; i<=5; i++){
+                
+                if(window["Btn"+i] == ""){
+                    hidenBtn = 'hiden';
+                    countBtn = countBtn + 1;
+                } else {
+                    hidenBtn = 'showBtn';
+                }
+                eventBtn += '<li id="Btn'+i+'" class="'+hidenBtn+'">'+window["Btn"+i]+'</li>';
+               
+            }
+
+            eventBtn += '</ul>';
+        }
+
+    //Populate the values
+        document.getElementById("eventTitle").innerHTML = eventName;
+        document.getElementById("eventMessage").innerHTML = eventDescription;
+        document.getElementById("eventButton").innerHTML = eventBtn;
+
+    //Info Event without Btns
+    if(countBtn == 5){
+            document.getElementById('Btn3').innerHTML = 'Ok';
+            document.getElementById('Btn3').setAttribute("class", "showBtn");
+        }
+    //Timer Event - Create Timer
+        if(eventClass == "Timer"){
+            document.getElementById("eventMessage").innerHTML = document.getElementById("eventMessage").innerHTML + "<b>"+timerMM+":"+timerSS+"</b>";
+        }
+</script>
+</html>

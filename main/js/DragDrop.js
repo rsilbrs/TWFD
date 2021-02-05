@@ -9,6 +9,11 @@ new Sortable(Info, {
     animation: 150
 });
 
+new Sortable(Timer, {
+    group: 'shared',
+    animation: 150
+});
+
 new Sortable(Proc1, {
     group: 'shared',
     animation: 150
