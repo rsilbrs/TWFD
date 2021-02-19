@@ -79,6 +79,7 @@ function createNewEvent(source){
     //Define the data source
     if(source == 'demo'){
         totalEvents = Language('demoEvents',0).length;
+        document.getElementById("demo").innerHTML = "";
     } else {
         totalEvents = 1;
     }

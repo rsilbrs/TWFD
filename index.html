@@ -23,7 +23,7 @@
 
 <body>
 
-    <main class="container">
+    <main>
 
         <div class="row">
             <div class="col-12" style="padding:0px;">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="demoEvents" onclick="createNewEvent('demo')">
+                <div class="demoEvents" id="demo" onclick="createNewEvent('demo')">
                     <i class="fas fa-upload"></i>
                     <script>Language('LoadDemoEvents',1)</script>
                 </div>
@@ -71,8 +71,12 @@
                     <ui>
                         <li onclick="loadLanguage('ENG')">ENG</li>
                         <li onclick="loadLanguage('ESP')">ESP</li>
-                        <li onclick="loadLanguage('JAP')">JAP</li>
-                        <li onclick="loadLanguage('PTBR')">PTBR</li>
+                        <li onclick="loadLanguage('DE')">DEU</li>
+                        <li onclick="loadLanguage('FR')">FRA</li>
+                        <li onclick="loadLanguage('IT')">ITA</li>
+                        <li onclick="loadLanguage('JAP')">JPN</li>
+                        <li onclick="loadLanguage('CHI')">ZHO</li>
+                        <li onclick="loadLanguage('PTBR')">POR</li>
                     </ui>
                 </div>
             </div>
@@ -103,6 +107,18 @@
                 <!-- Form new event modal-->
             </div>
     </main>
+    <footer>
+        <div class="row">
+            <div class="col-9 copyright">
+                <img src="main/imgs/logoTerumo.png" alt="Terumo Blood and Cell Technologies"><br>
+                © <script>document.write(new Date().getFullYear())</script> Terumo BCT, INC. - All Rights Reserved</li>
+            </div>
+            <div class="col-3 contact">
+                <script>Language('Contact',1)</script><br>
+                <a href="mailto:ricardo.silva@terumobct.com">ricardo.silva@terumobct.com</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 <!-- Javascript -->
