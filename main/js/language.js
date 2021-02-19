@@ -50,6 +50,7 @@ var ENG = {
     "EventDescription": "Provide a description of that event",
     "EventButtonTitle": "Enter the options that will be available on the screen",
     "EventTimerTitle":  "What is the timer interval/duration?",
+	"EventInfoOk":		"Ok",
 	"Contact":			"If you have any questions, difficulties or suggestions, feel free to contact us:",
 	"TrimaSteps":[
 		"At Startup",
@@ -167,6 +168,7 @@ var ESP = {
     "EventDescription": "La descripción de este evento",
     "EventButtonTitle": "Ingrese las opciones que estarán disponibles en la pantalla",
     "EventTimerTitle":  "Intervalo / Duración del temporizador?",
+	"EventInfoOk":		"Ok",
 	"Contact":			"Si tiene alguna pregunta, dificultad o sugerencia, no dude en contactarnos:",
 	"TrimaSteps":[
 		"Al inicio",
@@ -284,6 +286,7 @@ var JAP = {
     "EventDescription": "イベントの説明を入力してください",
     "EventButtonTitle": "画面で利用できるオプションを通知します",
     "EventTimerTitle":  "タイマーの間隔／時間とは何ですか？",
+	"EventInfoOk":		"はい",
 	"Contact":			"ご質問、問題、提案がございましたら、お気軽にお問い合わせください",
 	"TrimaSteps":[
 		"起動時",
@@ -396,6 +399,7 @@ var DE = {
     "EventDescription": "Geben Sie eine Beschreibung des Ereignisses an",
     "EventButtonTitle": "Informieren Sie die Optionen, die auf dem Bildschirm verfügbar sein werden",
     "EventTimerTitle":  "Timer Intervall / Dauer?",
+	"EventInfoOk":		"Ok",
 	"Contact":  		"Wenn Sie Fragen, Schwierigkeiten oder Vorschläge haben, zögern Sie nicht, uns zu kontaktieren:",
 	"TrimaSteps":[
 		"Beim Starten",
@@ -508,6 +512,7 @@ var FR = {
     "EventDescription": "Fournissez une description de l'événement",
     "EventButtonTitle": "Renseignez les options qui seront disponibles à l'écran",
     "EventTimerTitle":  "Intervalle / durée de la minuterie?",
+	"EventInfoOk":		"Ok",
 	"Contact":  		"Si vous avez des questions, des difficultés ou des suggestions, n'hésitez pas à nous contacter:",
 	"TrimaSteps":[
 		"Au démarrage",
@@ -620,6 +625,7 @@ var IT = {
     "EventDescription": "Fornisci una descrizione dell'evento",
     "EventButtonTitle": "Informa le opzioni che saranno disponibili sullo schermo",
     "EventTimerTitle":  "Intervallo / durata del timer?",
+	"EventInfoOk":		"Ok",
 	"Contact":  		"Se hai domande, difficoltà o suggerimenti, non esitare a contattarci:",
 	"TrimaSteps":[
 		"All'avvio",
@@ -731,6 +737,7 @@ var PTBR = {
     "EventDescription": "Forneça uma descrição do evento",
     "EventButtonTitle": "Informe as opções que serão disponibilizadas na tela",
     "EventTimerTitle":  "Intervalo/Duração do temporizador?",
+	"EventInfoOk":		"Ok",
 	"Contact":  		"Se você tiver alguma dúvida, dificuldade ou sugestão, não hesite em nos contatar:",
 	"TrimaSteps":[
 		"Ao Iniciar",
@@ -843,6 +850,7 @@ var CHI = {
     "EventDescription": "提供该事件的描述",
     "EventButtonTitle": "输入屏幕上可用的选项",
     "EventTimerTitle":  "定时器间隔/持续时间是多少？",
+	"EventInfoOk":		"好的",
 	"Contact":  		"如果您有任何疑问、困难或建议，请随时与我们联系：",
 	"TrimaSteps":[
 		"在启动时",

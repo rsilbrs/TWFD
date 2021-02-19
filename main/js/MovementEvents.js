@@ -39,7 +39,7 @@ function modalEvent(eventID){
         eventModal +=               '</button>';
         eventModal +=           '</div>';
         eventModal +=           '<div class="modal-body">';
-        eventModal +=               '<iframe id="trimaEvent" src="eventDetail.html?Step='+parentIDonly+'&Lg='+getLanguage()+'&Class='+eventClass+'&Name='+eventName+'&Description='+eventDescription+'&Btn1='+eventBtn1+'&Btn2='+eventBtn2+'&Btn3='+eventBtn3+'&Btn4='+eventBtn4+'&Btn5='+eventBtn5+'&timerMM='+eventTimerMm+'&timerSS='+eventTimerSs+'" scrolling="no" frameborder="0" width="600px" height="450px"></iframe>';
+        eventModal +=               '<iframe id="trimaEvent" src="eventDetail.html?Step='+parentIDonly+'&lg='+getLanguage()+'&Class='+eventClass+'&Name='+eventName+'&Description='+eventDescription+'&Btn1='+eventBtn1+'&Btn2='+eventBtn2+'&Btn3='+eventBtn3+'&Btn4='+eventBtn4+'&Btn5='+eventBtn5+'&timerMM='+eventTimerMm+'&timerSS='+eventTimerSs+'" scrolling="no" frameborder="0" width="600px" height="450px"></iframe>';
         eventModal +=           '</div>';
         eventModal +=       '</div>';
         eventModal +=   '</div>';

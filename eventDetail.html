@@ -9,6 +9,8 @@
     <title>Trima Workflow Designer</title>
 
     <link href="main/css/eventDetail.css" rel="stylesheet">
+
+    <script src="main/js/language.js"></script>
 </head>
 
 <bod>
@@ -33,7 +35,7 @@
         var eventName           = url.searchParams.get("Name");
         var eventDescription    = url.searchParams.get("Description");
         var eventClass          = url.searchParams.get("Class");
-        var language            = url.searchParams.get("Lg");
+        var language            = url.searchParams.get("lg");
 
         var Btn1               = url.searchParams.get("Btn1");
         var Btn2               = url.searchParams.get("Btn2");
@@ -71,8 +73,10 @@
 
     //Info Event without Btns
     if(countBtn == 5){
-            document.getElementById('Btn3').innerHTML = 'Ok';
+            document.getElementById('Btn3').innerHTML = Language('EventInfoOk',0);
             document.getElementById('Btn3').setAttribute("class", "showBtn");
+
+            console.log(getLanguage())
         }
     //Timer Event - Create Timer
         if(eventClass == "Timer"){
