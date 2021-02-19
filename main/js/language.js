@@ -269,13 +269,13 @@ var JAP = {
     "ProgramFlow":      "プログラムフロー",
     "CreateANewEvent":  "新しいイベントを作成する",
     "WhatIsAnEvent":    "イベントとは何ですか？",
-    "EventExplanation": "イベントを使用すると、たとえばバーコードを介して、プロセスに関する特定の入力を行うことができます。イベントを使用して、手順中にオペレーターに何らかのアクションを要求するメッセージをパーソナライズできます。",
+    "EventExplanation": "イベントを使用すると、たとえばバーコードを介して、プロセスに関する特定のインプットを行うことができます。イベントを使用して、手順中にオペレーターに何らかのアクションを要求するメッセージを用途に合わせて設定できます。",
     "EventTypeTitle": 	"イベントはTOMEsでご利用いただけます:",
     "EventType1": 		"バーコードを介して情報のキャプチャを要求する",
     "EventType2": 		"Trima画面でオプションを選択して、一部の情報のキャプチャを要求します",
     "EventType3": 		"オペレーターに情報/ガイダンスを提供する",
-    "EventType4": 		"オペレーターが何らかのアクティビティを実行するためのタイマーを提供する.",
-    "EventType": 		"Trimaにどのようにお手伝いしてもらいたいですか?",
+    "EventType4": 		"オペレーターが何らかのアクティビティを行うためのタイマーを提供する",
+    "EventType": 		"Trimaに何を手伝ってもらいたいですか？",
     "EventBarcode": 	"バーコード情報をリクエストする",
     "EventButton": 		"画面上のボタンから情報をリクエストする",
     "EventInfo": 		"オペレーターに何かを伝えます",
@@ -283,29 +283,29 @@ var JAP = {
     "EventName": 		"このイベントの名前は何ですか?",
     "EventDescription": "イベントの説明を入力してください",
     "EventButtonTitle": "画面で利用できるオプションを通知します",
-    "EventTimerTitle":  "タイマー間隔/期間?",
+    "EventTimerTitle":  "タイマーの間隔／時間とは何ですか？",
 	"Contact":			"ご質問、問題、提案がございましたら、お気軽にお問い合わせください",
 	"TrimaSteps":[
 		"起動時",
-		"ロードシステムの前",
-		"チューブセットテスト前",
-		"ACコネクトの前",
-		"ドナーエントリー前",
-		"ドナーを準備する前に",
-		"描画を開始する前に",
-		"収集中",
-		"ドナー切断前",
-		"交換ソリューションを接続する前に",
-		"PASを接続する前に",
-		"RASを接続する前に",
-		"製品をシールする前",
-		"次の手順の前に"
+		"「システムへの装着」の前",
+		"「回路セットテスト」の前",
+		"「抗凝固剤接続」の前",
+		"「ドナー情報入力」の前",
+		"「ドナーを準備」の前",
+		"「採血開始」の前",
+		"採血中",
+		"「抜針」の前",
+		"「置換液接続」の前",
+		"「PASを接続」の前",
+		"「RASを接続」の前",
+		"「製剤バッグをシール」の前",
+		"次の手順に移る前"
     ],
 	"demoEvents":[
 		[
 			"Barcode",
-			"抗凝固剤がたくさん",
-			"抗凝固剤溶液のバッチバーコードをスキャンしてください"
+			"抗凝固剤のロット",
+			"抗凝固剤のロット番号をスキャンしてください"
 		],
 		[
 			"Barcode",
@@ -314,18 +314,18 @@ var JAP = {
 		],
 		[
 			"Barcode",
-			"寄付の識別",
-			"寄付識別コードを入力してください"
+			"献血ID",
+			"献血IDをスキャンしてください"
 		],
 		[
 			"Barcode",
-			"サンプルチューブ",
-			"すべてのサンプルチューブのコードを入力してください"
+			"検体チューブ",
+			"各検体チューブのバーコードをスキャンしてください"
 		],
 		[
 			"Barcode",
-			"キットロット",
-			"使い捨てバッチのバーコードを入力してください"
+			"回路セットのロット",
+			"回路セットのロット番号をスキャンしてください"
 		],
 		[
 			"Barcode",
@@ -336,19 +336,19 @@ var JAP = {
 			"Button",
 			"ドナーを確認する",
 			"ドナーにすべてが順調であることを確認する?",
-			["Sí", "", "", "", "No"],
+			["はい", "", "", "", "いいえ"],
 		],
 		[
 			"Info",
 			"奨学金のラベリング",
-			"収集したすべてのバッグにラベルを付けることを忘れないでください",
+			"採血した全ての製品バッグにラベルを付けることを忘れないでください",
 			["","","","",""],
 		],
 		[
 			"Button",
 			"寄付アーム",
 			"どの腕が寄付に使用されたかを知らせます",
-			["Izquierdo","","","","Derecho"],
+			["左","","","","右"],
 		],
 		[
 			"Timer",
@@ -358,14 +358,14 @@ var JAP = {
 		],
 		[
 			"Timer",
-			"ドナーの快適さ",
+			"ドナーの快適性",
 			"ドナーが快適であることを確認してください",
             ["10","00","","",""],
 		],
 		[
 			"Timer",
 			"製品検査",
-			"製品の外観が適切であることを確認してください",
+			"採取した製品の外観を確認してください",
             ["20","00","","",""],
         ]
     ]
@@ -381,7 +381,7 @@ var DE = {
     "ProgramFlow":      "Programmablauf",
     "CreateANewEvent":  "Erstellen Sie ein neues Ereignis",
     "WhatIsAnEvent":    "Was ist eine Veranstaltung?",
-    "EventExplanation": "Ein Ereignis ist eine Funktion, die mit Version 7 von Trima und TOMEs verfügbar ist. Damit ist es möglich, personalisierte Nachrichten zu erstellen, die vom Bediener während des Vorgangs eine Aktion anfordern.",
+    "EventExplanation": "Mit Ereignissen können Sie bestimmte Informationen zum Prozess eingeben, z. B. über Barcodes. Ereignisse können verwendet werden, um Nachrichten zu personalisieren, die vom Bediener während des Vorgangs eine Aktion anfordern.",
     "EventTypeTitle": 	"Bei TOMEs verfügbare Veranstaltungen sind:",
     "EventType1": 		"Fordern Sie die Erfassung von Informationen per Barcode an",
     "EventType2": 		"Fordern Sie die Erfassung einiger Informationen an, indem Sie eine Option auf dem Trima-Bildschirm auswählen",
@@ -493,7 +493,7 @@ var FR = {
     "ProgramFlow":      "Flux de programme",
     "CreateANewEvent":  "Créer un nouvel événement",
     "WhatIsAnEvent":    "Qu'est-ce qu'un événement?",
-    "EventExplanation": "Un événement est une fonction disponible avec la version 7 de Trima et TOME. Avec lui, il est possible de créer des messages personnalisés qui demandent une action de l'opérateur pendant la procédure.",
+    "EventExplanation": "Les événements vous permettent de donner des informations spécifiques sur le processus, par exemple via des codes à barres. Les événements peuvent être utilisés pour personnaliser les messages qui demanderont une action à l'opérateur pendant la procédure.",
     "EventTypeTitle": 	"Les événements disponibles à TOME sont:",
     "EventType1": 		"Demander la saisie d'informations par code-barres",
     "EventType2": 		"Demandez la capture de certaines informations en sélectionnant une option sur l'écran Trima",
@@ -605,7 +605,7 @@ var IT = {
     "ProgramFlow":      "Flusso del programma",
     "CreateANewEvent":  "Crea un nuovo evento",
     "WhatIsAnEvent":    "Cos'è un evento?",
-    "EventExplanation": "Un evento è una funzione disponibile con la versione 7 di Trima e TOME. Con esso è possibile creare messaggi personalizzati che richiedono un'azione da parte dell'operatore durante la procedura.",
+    "EventExplanation": "Gli eventi consentono di fornire input specifici sul processo, ad esempio tramite codici a barre. Gli eventi possono essere utilizzati per personalizzare i messaggi che richiederanno un'azione da parte dell'operatore durante la procedura.",
     "EventTypeTitle": 	"Gli eventi disponibili presso TOME sono:",
     "EventType1": 		"Richiedi l'acquisizione di informazioni tramite codice a barre",
     "EventType2": 		"Richiedi l'acquisizione di alcune informazioni selezionando un'opzione nella schermata Trima",
@@ -819,111 +819,111 @@ var PTBR = {
 }
 
 var CHI = {
-	"CreateNewEvent":   "建立新活動",
-	"AvailableEvents":  "可用活動",
-	"BarcodeEvents":    "條碼事件",
+	"CreateNewEvent":   "建立新事件",
+	"AvailableEvents":  "可用事件",
+	"BarcodeEvents":    "条形码事件",
 	"InfoEvents":       "信息事件",
-    "TimerEvents":      "天氣事件",
-    "LoadDemoEvents":   "加載演示事件",
-    "ProgramFlow":      "程序流程",
-    "CreateANewEvent":  "建立新活動",
-    "WhatIsAnEvent":    "什麼事",
-    "EventExplanation": "事件是Trima和TOMEs的版本7中提供的功能。有了它，就有可能創建個性化的消息，要求操作員在手術過程中採取一些措施。",
-    "EventTypeTitle": 	"TOMEs提供的事件有：:",
-    "EventType1": 		"通過條形碼請求捕獲信息",
-    "EventType2": 		"通過選擇Trima屏幕上的選項來請求捕獲某些信息",
-    "EventType3": 		"向操作員提供一些信息/指導",
-    "EventType4": 		"為操作員提供計時器以執行一些活動。",
-    "EventType": 		"您希望Trima如何為您提供幫助？",
-    "EventBarcode": 	"索取條形碼信息",
-    "EventButton": 		"通過屏幕上的按鈕請求信息",
-    "EventInfo": 		"告訴操作員一些事情",
-    "EventTimer": 		"提供一個計時器",
-    "EventName": 		"此活動的名稱是什麼？",
-    "EventDescription": "提供事件的描述",
-    "EventButtonTitle": "通知屏幕上可用的選項",
-    "EventTimerTitle":  "計時器間隔/持續時間？",
-	"Contact":  		"如果您有任何疑問，困難或建議，請隨時與我們聯繫：",
+    "TimerEvents":      "定时器事件",
+    "LoadDemoEvents":   "加载演示事件",
+    "ProgramFlow":      "程序流",
+    "CreateANewEvent":  "建立新事件",
+    "WhatIsAnEvent":    "什么是事件？",
+    "EventExplanation": "事件允许您在过程中提供特定的输入，例如，条形码输入。事件可用于个性化消息，这些消息将要求操作者在操作过程中采取某些措施。",
+    "EventTypeTitle": 	"TOMEs上可用的事件类型为：:",
+    "EventType1": 		"通过条形码扫描请求捕获信息",
+    "EventType2": 		"通过选择Trima屏幕上的按钮来请求捕获某些信息",
+    "EventType3": 		"向操作者提供一些信息/指导",
+    "EventType4": 		"向操作者提供定时器以执行一些活动",
+    "EventType": 		"您希望Trima如何为您提供帮助？",
+    "EventBarcode": 	"通过条形码请求信息",
+    "EventButton": 		"通过屏幕上的按钮请求信息",
+    "EventInfo": 		"通过Trima屏幕通知操作者",
+    "EventTimer": 		"提供一个定时器",
+    "EventName": 		"此事件的名字是什么？",
+    "EventDescription": "提供该事件的描述",
+    "EventButtonTitle": "输入屏幕上可用的选项",
+    "EventTimerTitle":  "定时器间隔/持续时间是多少？",
+	"Contact":  		"如果您有任何疑问、困难或建议，请随时与我们联系：",
 	"TrimaSteps":[
-		"啟動時",
-		"加載系統之前",
-		"測試套裝之前",
-		"連接交流電之前",
-		"數據輸入期間",
-		"準備捐贈者之前",
-		"開始提取之前",
-		"收集期間",
-		"斷開捐助者之前",
-		"連接替換解決方案之前",
-		"連接PAS之前",
-		"連接紅細胞添加劑解決方案之前",
-		"密封產品之前",
-		"下一個步驟之前"
+		"在启动时",
+		"在装载系统前",
+		"在管路套件测试前",
+		"在抗凝剂连接前",
+		"在输入献血者信息前",
+		"在献血者准备前",
+		"在开始采血前",
+		"采集期间",
+		"在献血者断开连接前",
+		"在连接替代解决方案前",
+		"在连接PAS前",
+		"在连接红细胞添加剂解决方案前",
+		"在产品封口前",
+		"在下一个程序前"
     ],
 	"demoEvents":[
 		[
 			"Barcode",
-			"大量抗凝劑",
-			"請閱讀抗凝溶液批次條形碼"
+			"ACD-A批次",
+			"请扫描ACD-A批号"
 		],
 		[
 			"Barcode",
-			"捐助者ID",
-			"捐助者ID"
+			"献血者编号",
+			"请扫描献血者编号"
 		],
 		[
 			"Barcode",
-			"捐贈ID",
-			"請輸入捐贈識別碼"
+			"献血编号",
+			"请扫描献血编号"
 		],
 		[
 			"Barcode",
-			"樣品管",
-			"請輸入所有樣品管的代碼"
+			"样品管",
+			"请扫描每个样品管上的条形码"
 		],
 		[
 			"Barcode",
-			"套件批",
-			"請輸入一次性使用的條形碼"
+			"管路套件批次",
+			"请扫描管路套件批次号"
 		],
 		[
 			"Barcode",
-			"操作員編號",
-			"請告知負責此信息的操作員"
+			"操作者编号",
+			"请扫描执行操作人员的操作者编号"
 		],				
 		[
 			"Button",
-			"檢查捐助者",
-			"確認捐贈者一切都好嗎？",
-			["是的", "", "", "", "不"],
+			"检查献血者",
+			"献血者是否舒适？",
+			["是", "", "", "", "否"],
 		],
 		[
 			"Info",
-			"獎學金標籤",
-			"切記對所有收集的袋子貼標籤",
+			"血袋贴标",
+			"记得对所有采集的血袋贴标",
 		],
 		[
 			"Button",
-			"捐贈臂",
-			"告知使用哪隻手臂進行捐贈",
-			["剩下","","","","正確的"],
+			"献血手臂",
+			"请选择用于静脉穿刺的手臂",
+			["左","","","","右"],
 		],
 		[
 			"Timer",
-			"穿刺質量",
-			"檢查穿刺是否足夠",
+			"静脉穿刺质量",
+			"请确认静脉穿刺部位是否合适",
             ["1","00","","",""],
 		],
 		[
 			"Timer",
-			"捐助者的安慰",
-			"捐助者的安慰",
+			"献血者舒适度",
+			"请确认献血者是否舒适",
             ["10","00","","",""],
 		],
 		[
 			"Timer",
-			"產品檢驗",
-			"確保產品的視覺外觀足夠",
+			"产品确认",
+			"检查采集产品的外观",
             ["20","00","","",""],
         ]
     ]
