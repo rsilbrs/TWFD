@@ -112,7 +112,13 @@ a:hover.step{
 
 #Proc1, #Proc2, #Proc3, #Proc4, #Proc5, #Proc6, #Proc7, #Proc8, #Proc9, #Proc10, #Proc11, #Proc12, #Proc13, #Proc14 {
     display: block;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+/*Export Button*/
+/*some styles in newEventForm.css*/
+.exportEventButton{
+    margin:5px 0;
 }
 
 /*Modal configuration */

@@ -101,7 +101,7 @@ var ENG = {
 		[
 			"Barcode",
 			"Operator ID",
-			"Please scan the operator ID of the person performing the action",
+			"Please scan the ID of the person performing this",
 			["Cancel","","","",""]	
 		],				
 		[
@@ -202,24 +202,24 @@ var ESP = {
 		[
 			"Barcode",
 			"ID de la donación",
-			"Por favor, escanee la identificación de la donación"
+			"Escanee la identificación de la donación"
 		],
 		[
 			"Barcode",
 			"Tubos de la muestra",
-			"Por favor, escanee el código de barras de todos los tubos de muestra.",
+			"Escanee el código de barras de todas las muestras",
 			["Cancelar","","","",""]
 		],
 		[
 			"Barcode",
 			"Lote del desechable",
-			"Por favor, escanee el código de barras que informa el lote desechable",
+			"Leer el código de barras del lote desechable",
 			["Cancelar","","","",""]
 		],
 		[
 			"Barcode",
 			"ID del operador",
-			"Por favor, informe al operador responsable de esa información.",
+			"Informe al operador responsable de esa información",
 			["Cancelar","","","",""]	
 		],				
 		[
@@ -421,7 +421,7 @@ var DE = {
 		[
 			"Barcode",
 			"Viel Antikoagulans",
-			"Bitte lesen Sie den Chargen-Barcode der Antikoagulanslösung"
+			"Lesen Sie den Antikoagulans-Batch-Barcode"
 		],
 		[
 			"Barcode",
@@ -436,7 +436,7 @@ var DE = {
 		[
 			"Barcode",
 			"Probenröhrchen",
-			"Bitte geben Sie den Code für alle Probenröhrchen ein"
+			"Geben Sie den Code für alle Probenröhrchen ein"
 		],
 		[
 			"Barcode",
@@ -446,7 +446,7 @@ var DE = {
 		[
 			"Barcode",
 			"Bediener-ID",
-			"Bitte informieren Sie den für diese Informationen zuständigen Betreiber"
+			"Informieren Sie den zuständigen Betreiber darüber"
 		],				
 		[
 			"Button",
@@ -758,33 +758,33 @@ var PTBR = {
 	"demoEvents":[
 		[
 			"Barcode",
-			"Lote do Anticoagulante",
-			"Por favor, leia o código de barras do lote da solução anticoagulante"
+			"Lote Anticoagulante",
+			"Leia o código de barras do lote do anticoagulante"
 		],
 		[
 			"Barcode",
 			"ID Doador",
-			"Por favor, informe o código de identificação do doador"
+			"Informe o código de identificação do doador"
 		],
 		[
 			"Barcode",
 			"ID Doação",
-			"Por favor, informe o código de identificação da doação"
+			"Informe o código de identificação da doação"
 		],
 		[
 			"Barcode",
 			"Tubos de amostras",
-			"Por favor, informe o código de todos os tubos de amostras"
+			"Informe o código de todos os tubos de amostras"
 		],
 		[
 			"Barcode",
 			"Lote do Kit",
-			"Por favor, informe o código de barras referente ao lote do descartável"
+			"Informe o código de barras do lote do kit"
 		],
 		[
 			"Barcode",
 			"ID Operador",
-			"Por favor, informe o operador responsável por essa informação"
+			"Informe o operador responsável pela informação"
 		],				
 		[
 			"Button",
@@ -794,7 +794,7 @@ var PTBR = {
 		],
 		[
 			"Info",
-			"Etiquetagem das Bolsas",
+			"Etiqueta das Bolsas",
 			"Lembre-se de etiquetar todas as bolsas coletadas",
 			["","","","",""],
 		],

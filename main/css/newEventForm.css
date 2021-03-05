@@ -16,7 +16,7 @@
     margin:0;
 }
 
-.newEvent button, .newEventBtn{
+.newEvent button, .newEventBtn, .exportEventButton{
     background-color:#CED9E7;
     background-image: linear-gradient(#FDFDFD 50%, #E5E5E5 50%);
 

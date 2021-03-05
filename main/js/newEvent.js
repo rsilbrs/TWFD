@@ -40,13 +40,13 @@ function newEvent(){
                                 form += '<div class="row newSection">';
                                     form += '<div class="col-12">';
                                         form += '<label for="inputState" class="col-5">'+Language('EventName',0)+'</label>';
-                                        form += '<input id="eventName" type="text" class="col-5" required>';
+                                        form += '<input id="eventName" type="text" class="col-5" maxlength="20" required>';
                                     form += '</div>';
                                 form += '</div>';
                                 form += '<div class="row newSection">';
                                     form += '<div class="col-12">';
                                         form += '<label for="inputState" class="col-5">'+Language('EventDescription',0)+'</label>';
-                                        form += '<input id="eventDescription" type="text" class="col-5" maxlength="160" required>';
+                                        form += '<input id="eventDescription" type="text" class="col-5" maxlength="50" required>';
                                     form += '</div>';
                                 form += '</div>';
 
@@ -176,6 +176,12 @@ function newEventLayout(info){
 function eventUpdateForm(eventClass){
     //Add extra fields
     var newForm = '';
+    if(eventClass == 'Barcode'){
+        document.getElementById("eventDescription").setAttribute("maxlength", "50");
+    } else {
+        document.getElementById("eventDescription").setAttribute("maxlength", "150");
+    }
+    
     if(eventClass == 'Button'){
         newForm += '<div class="row newSection">';
         newForm +=     '<div class="col-12">';
@@ -202,10 +208,7 @@ function eventUpdateForm(eventClass){
         newForm +=          '<input type="text" id="eventTimerMm" class="col-1 center" placeholder="mm" maxlength="2" type="number">';
         newForm +=          '<input type="text" id="eventTimerSs" class="col-1 center" placeholder="ss" maxlength="2" type="number">';
         newForm +=      '</div>';
-        newForm += '</div>';
-
-        //Configure the length of the description field
-        document.getElementById("eventDescription").setAttribute("maxlength", "120");
+        newForm += '</div>';        
     }
 
     document.getElementById("specialFields").innerHTML = newForm;
