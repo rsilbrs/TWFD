@@ -1,3 +1,10 @@
+@media print{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
 body{
     font-size: 12px;
 }
@@ -117,8 +124,12 @@ a:hover.step{
 
 /*Export Button*/
 /*some styles in newEventForm.css*/
+.exportBtn{
+    display: flex;
+}
 .exportEventButton{
-    margin:5px 0;
+    margin:5px 2px;
+    flex-grow: 100;
 }
 
 /*Modal configuration */

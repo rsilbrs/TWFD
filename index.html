@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4 mainSec">
+            <div class="col-4 mainSec no-print">
                 <div class="step Title newEvent">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalNewEvent" onclick="newEvent()">
                         <script>Language('CreateNewEvent',1)</script>
@@ -81,7 +81,7 @@
                 </div>
             </div>
 
-            <div class="col-1">
+            <div class="col-1 no-print">
                 <!-- spacer between columns-->
             </div> 
 
@@ -92,8 +92,9 @@
                     <!-- All procedure steps-->
                 </div>
 
-                <div class="step Btop">
-                    <button class="exportEventButton" onclick="ExportEvent()">Export to .TRP file</button>
+                <div class="step Btop exportBtn no-print">
+                    <button class="exportEventButton" onclick="ExportEvent()">Export to <strong>.TRP</strong> file</button>
+                    <button class="exportEventButton" onclick="ExportEvent()">Export to <strong>.PDF</strong> file</button>
                 </div>
 
             </div>
