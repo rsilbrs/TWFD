@@ -52,6 +52,7 @@ var ENG = {
     "EventTimerTitle":  "What is the timer interval/duration?",
 	"EventInfoOk":		"Ok",
 	"Contact":			"If you have any questions, difficulties or suggestions, feel free to contact us:",
+	"ExportTo":			"Export to",
 	"TrimaSteps":[
 		"At Startup",
 		"Before Load System",
@@ -170,6 +171,7 @@ var ESP = {
     "EventTimerTitle":  "Intervalo / Duración del temporizador?",
 	"EventInfoOk":		"Ok",
 	"Contact":			"Si tiene alguna pregunta, dificultad o sugerencia, no dude en contactarnos:",
+	"ExportTo":			"Exportar a",
 	"TrimaSteps":[
 		"Al inicio",
 		"Antes de cargar el sistema",
@@ -288,6 +290,7 @@ var JAP = {
     "EventTimerTitle":  "タイマーの間隔／時間とは何ですか？",
 	"EventInfoOk":		"はい",
 	"Contact":			"ご質問、問題、提案がございましたら、お気軽にお問い合わせください",
+	"ExportTo":			"輸出",
 	"TrimaSteps":[
 		"起動時",
 		"「システムへの装着」の前",
@@ -401,6 +404,7 @@ var DE = {
     "EventTimerTitle":  "Timer Intervall / Dauer?",
 	"EventInfoOk":		"Ok",
 	"Contact":  		"Wenn Sie Fragen, Schwierigkeiten oder Vorschläge haben, zögern Sie nicht, uns zu kontaktieren:",
+	"ExportTo":			"Exportieren nach",
 	"TrimaSteps":[
 		"Beim Starten",
 		"Vor dem Laden des Systems",
@@ -514,6 +518,7 @@ var FR = {
     "EventTimerTitle":  "Intervalle / durée de la minuterie?",
 	"EventInfoOk":		"Ok",
 	"Contact":  		"Si vous avez des questions, des difficultés ou des suggestions, n'hésitez pas à nous contacter:",
+	"ExportTo":			"Exporter vers",
 	"TrimaSteps":[
 		"Au démarrage",
 		"Avant de charger le système",
@@ -627,6 +632,7 @@ var IT = {
     "EventTimerTitle":  "Intervallo / durata del timer?",
 	"EventInfoOk":		"Ok",
 	"Contact":  		"Se hai domande, difficoltà o suggerimenti, non esitare a contattarci:",
+	"ExportTo":			"Esporta a",
 	"TrimaSteps":[
 		"All'avvio",
 		"Prima di caricare il sistema",
@@ -739,6 +745,7 @@ var PTBR = {
     "EventTimerTitle":  "Intervalo/Duração do temporizador?",
 	"EventInfoOk":		"Ok",
 	"Contact":  		"Se você tiver alguma dúvida, dificuldade ou sugestão, não hesite em nos contatar:",
+	"ExportTo":			"Exportar para",
 	"TrimaSteps":[
 		"Ao Iniciar",
 		"Antes de Carregar o Sistema",
@@ -852,6 +859,7 @@ var CHI = {
     "EventTimerTitle":  "定时器间隔/持续时间是多少？",
 	"EventInfoOk":		"好的",
 	"Contact":  		"如果您有任何疑问、困难或建议，请随时与我们联系：",
+	"ExportTo":			"输出到",
 	"TrimaSteps":[
 		"在启动时",
 		"在装载系统前",
