@@ -1,0 +1,211 @@
+body{
+    font-size:12px;
+}
+
+.viewWidth, main, footer{
+    width: 95vw;
+    min-width: 710px;
+    margin:auto;
+}
+
+/*top Nav Bar*/
+nav.topNav{
+    background-color: #ABC7EC; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#D8E6F6 49%, #CFE0F4 50%, #C6D9F2 52%, #CADCF3);
+
+    padding:3px 0px !important;
+    margin-bottom:15px;
+
+    border-top: 1px solid #AAC6EC !important;
+    border-bottom: 1px solid #AAC6EC !important;
+}
+
+nav.topNav .nav-link{
+    width: 80px;
+}
+nav.topNav span.TBCTlogo{
+    display:block;
+    height: 22px;
+    width: 100px;
+    
+    margin-top: 2px;
+
+    background-image:url("../img/TerumoGroupLogo_Grey.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:10%;
+
+}
+
+nav.topNav .name{
+    color:#104F9F;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+nav.topNav li{
+    list-style: none;
+    font-size: 11px;
+    display: block;
+
+    margin-top: -5px;
+}
+
+nav.topNav li a{
+    color: #104F9F !important;
+}
+/* .top nav bar*/
+
+/* nav Options */
+nav.options{
+    margin-bottom: 20px;
+}
+nav.options button{
+    border:1px solid #D0D1D2;
+    border-radius: 5px;
+    padding:5px 15px;
+
+    font-weight: bold;
+    color:#04408C;
+
+    background-color:#CED9E7;
+    background-image: linear-gradient(#FDFDFD 50%, #E5E5E5 50%);
+}
+
+nav.options button:hover{
+    border-color:#B4B6B8;
+
+    color:#04408C;
+}
+nav.options button:focus{
+    background-color:#DFE9F6;
+
+    color:#04408C;
+    border:1px solid #D0D1D2;
+
+    box-shadow: none;
+}
+
+nav.options button.spacer{
+    margin-left: 10px;
+}
+/* .nav Options */
+
+/* main Frame */
+.mainFrame{
+    display: block;
+    border:1px solid #AAC6EC;
+    border-radius:5px;
+    padding:0 5px 5px 5px;
+    position: relative;
+}
+.mainFrame strong.title{
+    position: relative;
+    background-color:#fff;
+    padding: 0 5px;
+    top: -11px;
+    
+    color: #04408C;
+
+    font-weight: bold;
+}
+/* .main Frame */
+
+/* main Frame Category - Barcode and Program Flow*/
+
+.mainFrame .eventCategory, .mainFrame .ProgramFlow{
+    display: block;
+    margin-bottom: 20px;
+}
+.mainFrame .eventCategory h5, .mainFrame .ProgramFlow a.step{
+    padding: 5px 10px;
+    background-color:#DFE8F6;
+    text-transform: uppercase;
+    color: #04408C;
+    font-size:11px;
+    font-weight: bold;
+}
+
+.mainFrame .eventCategory h5{
+    margin:0 0 5px 0;
+}
+
+.mainFrame .ProgramFlow a.step{
+    display: block;
+    text-decoration:none
+}
+
+.mainFrame .ProgramFlow div.spacer{
+    display:block;
+    margin:5px 0 20px 0;
+}
+
+
+.eventOption{
+    display: block;
+    padding: 5px 0 5px 40px;
+    
+
+    background-image: url("../img/leaf.gif");
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+
+    font-size: 11px;
+}
+
+.eventOption:hover{
+    background-color:#F1F1F1;
+    border-top:1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    cursor:pointer;
+
+    padding: 4px 0 4px 40px;
+}
+/* .min Frame Category */
+
+/*Modal configuration */
+.modal-dialog{
+    margin:10px auto;
+}
+.modal-dialog, .modal-content {
+    width: 70vw;
+
+    min-width: 700px;
+    min-height:570px;
+}
+
+.modal-body {
+    max-height: calc(100vh - 100px);
+    text-align: center;
+}
+
+.modal-body img{
+    height:450px;
+    width:600px;
+}
+
+/* .modal */
+
+
+/* footer */
+footer{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+
+    border-top: 1px solid #eee;
+
+    color:#666;
+}
+
+footer a{
+    text-decoration: none;
+    color:#666
+}
+
+footer a:hover{
+    text-decoration:underline;
+    color:#04408C;
+}
+/* .footer */
