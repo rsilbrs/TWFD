@@ -51,6 +51,7 @@ var ENG = {
     "EventButtonTitle": "Enter the options that will be available on the screen",
     "EventTimerTitle":  "What is the timer interval/duration?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Let's talk",
 	"Contact":			"If you have any questions, difficulties or suggestions, feel free to contact us:",
 	"ExportTo":			"Export to",
 	"TrimaSteps":[
@@ -170,6 +171,7 @@ var ESP = {
     "EventButtonTitle": "Ingrese las opciones que estarán disponibles en la pantalla",
     "EventTimerTitle":  "Intervalo / Duración del temporizador?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Vamos a hablar",
 	"Contact":			"Si tiene alguna pregunta, dificultad o sugerencia, no dude en contactarnos:",
 	"ExportTo":			"Exportar a",
 	"TrimaSteps":[
@@ -289,6 +291,7 @@ var JAP = {
     "EventButtonTitle": "画面で利用できるオプションを通知します",
     "EventTimerTitle":  "タイマーの間隔／時間とは何ですか？",
 	"EventInfoOk":		"はい",
+	"ContactName":		"話そう",
 	"Contact":			"ご質問、問題、提案がございましたら、お気軽にお問い合わせください",
 	"ExportTo":			"輸出",
 	"TrimaSteps":[
@@ -403,6 +406,7 @@ var DE = {
     "EventButtonTitle": "Informieren Sie die Optionen, die auf dem Bildschirm verfügbar sein werden",
     "EventTimerTitle":  "Timer Intervall / Dauer?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Lass uns reden",
 	"Contact":  		"Wenn Sie Fragen, Schwierigkeiten oder Vorschläge haben, zögern Sie nicht, uns zu kontaktieren:",
 	"ExportTo":			"Exportieren nach",
 	"TrimaSteps":[
@@ -517,6 +521,7 @@ var FR = {
     "EventButtonTitle": "Renseignez les options qui seront disponibles à l'écran",
     "EventTimerTitle":  "Intervalle / durée de la minuterie?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Parlons",
 	"Contact":  		"Si vous avez des questions, des difficultés ou des suggestions, n'hésitez pas à nous contacter:",
 	"ExportTo":			"Exporter vers",
 	"TrimaSteps":[
@@ -631,6 +636,7 @@ var IT = {
     "EventButtonTitle": "Informa le opzioni che saranno disponibili sullo schermo",
     "EventTimerTitle":  "Intervallo / durata del timer?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Vamos converser",
 	"Contact":  		"Se hai domande, difficoltà o suggerimenti, non esitare a contattarci:",
 	"ExportTo":			"Esporta a",
 	"TrimaSteps":[
@@ -744,6 +750,7 @@ var PTBR = {
     "EventButtonTitle": "Informe as opções que serão disponibilizadas na tela",
     "EventTimerTitle":  "Intervalo/Duração do temporizador?",
 	"EventInfoOk":		"Ok",
+	"ContactName":		"Vamos conversar",
 	"Contact":  		"Se você tiver alguma dúvida, dificuldade ou sugestão, não hesite em nos contatar:",
 	"ExportTo":			"Exportar para",
 	"TrimaSteps":[
@@ -858,6 +865,7 @@ var CHI = {
     "EventButtonTitle": "输入屏幕上可用的选项",
     "EventTimerTitle":  "定时器间隔/持续时间是多少？",
 	"EventInfoOk":		"好的",
+	"ContactName":		"让我们谈谈",
 	"Contact":  		"如果您有任何疑问、困难或建议，请随时与我们联系：",
 	"ExportTo":			"输出到",
 	"TrimaSteps":[

@@ -12,7 +12,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
         <link href="assets/css/style.css" rel="stylesheet">
-        <link href="main/css/newEventForm.css" rel="stylesheet">
+        <link href="assets/css/EventForm.css" rel="stylesheet">
     <!-- Multilanguage -->
         <script src="assets/js/language.js"></script>
 </head>
@@ -52,13 +52,15 @@
     </nav>
 
     <nav class="options viewWidth">
-        <button><!--Create new event -->
+        <button data-toggle="modal" data-target="#modalNewEvent" onclick="newEvent()"><!--Create new event -->
             <script>Language('CreateNewEvent',1)</script>
         </button>
-        <button class="spacer" onclick="createNewEvent('demo')"><!--Load Demo events -->
-            <script>Language('LoadDemoEvents',1)</script>
-        </button>
-        <button class="spacer"><!--Export to PDF -->
+        <span id="demo">
+            <button class="spacer" onclick="createNewEvent('demo')"><!--Load Demo events -->
+                <script>Language('LoadDemoEvents',1)</script>
+            </button>
+        </span>
+        <button class="spacer" onclick="window.print()"><!--Export to PDF -->
             <script>Language('ExportTo',1)</script> .PDF
         </button>
     </nav>
@@ -72,36 +74,19 @@
                     <div class="eventCategory">
                        
                         <h5><script>Language('BarcodeEvents',1)</script></h5>
-
-                        <div id="Barcode">
-                            <span class="eventOption" draggable="true">Lot ACD-A</span>
-                            <span class="eventOption" draggable="true">Donor ID</span>
-                            <span class="eventOption" draggable="true">Sample tubes</span>
-                            <span class="eventOption" draggable="true">Tubing set lot</span>
-                            <span class="eventOption" draggable="true">Operator ID</span>
-                        </div>
+                        <div id="Barcode"></div>
 
                     </div>
                     <div class="eventCategory">
 
                         <h5><script>Language('InfoEvents',1)</script></h5>
-
-                        <div id="Info">
-                            <span class="eventOption" draggable="true">Donor Check</span>
-                            <span class="eventOption" draggable="true">Bag Labeling</span>
-                            <span class="eventOption" draggable="true">Donation Arm</span>
-                        </div>
+                        <div id="Info"></div>
                         
                     </div>
                     <div class="eventCategory">
 
                         <h5><script>Language('TimerEvents',1)</script></h5>
-
-                        <div id="Timer">
-                            <span class="eventOption" draggable="true">Venipuncture Quality</span>
-                            <span class="eventOption" draggable="true">Donor Confortable</span>
-                            <span class="eventOption" draggable="true">Product Verification</span>
-                        </div>
+                        <div id="Timer"></div>
                         
                     </div>
                 </div>
@@ -110,20 +95,23 @@
                 <!-- program flow -->
                 <div class="col mainFrame" aria-labelledby="ProgramFlow">
                     <strong class="title">Program Flow</strong>
-                    <div class="ProgramFlow" id="stepsProcedure">
-
-                    </div>
+                    <div class="ProgramFlow" id="stepsProcedure"></div>
                 </div>
                 <!-- .program flow -->
             </div>
         </div>
     </main>
-    <div id="modalProcedure"></div>
-    <div id="modalEvent"></div>
-    <div id="modalNewFormEvent"></div>
+
+    <!-- modal frames -->
+        <div id="modalProcedure"></div>
+        <div id="modalEvent"></div>
+        <div id="modalNewFormEvent"></div>
+        <div id="modalsContact"></div>
+    <!-- .modal frames-->
+
     <footer>
         <span>© 2021 - Terumo BCT, INC - All Rights Reserved</span>
-        <a href="#" class="float-end">Contact us</a>
+        <a href="#" onclick="modalContact()" class="float-end" data-toggle="modal" data-target="#contactModal">Contact us</a>
     </footer>
 
 </body>
@@ -137,4 +125,8 @@
     <script src='assets/js/Procedures.js'></script>
     <script src='assets/js/DragDrop.js'></script>
 
+    <script src='assets/js/newEvent.js'></script>
+    <script src='assets/js/ModalEvents.js'></script>
+
+    <script src='assets/js/ModalContact.js'></script>
 </html>

@@ -5,15 +5,15 @@ function newEvent(){
         form += '<div class="modal fade" id="modalNewEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">';
             form += '<div class="modal-dialog modal-dialog-centered" role="document">';
                 form += '<div class="modal-content" style="background:none; border:none; padding:0">';
-                    form += '<div class="modal-body" style="padding:0">';
-                        form += '<div class="col-12 mainSec">';
+                    form += '<div class="modal-body">';
+                        form += '<div class="col-12 mainSec" style="padding:0px;">';
                             form += '<!-- Title -->';
-                            form += '<span class="section Title">';
-                            form += Language('CreateANewEvent',0);
-                                form += '<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-5px">';
+                            form += '<div class="topNavForm">';
+                                form += '<strong>'+Language('CreateANewEvent',0)+'</strong>';
+                                form += '<button type="button" class="close float-end" data-dismiss="modal" aria-label="Close">';
                                     form += '<span aria-hidden="true">&times;</span>';
                                 form += '</button>';
-                            form += '</span>';
+                            form += '</div>';
                             form += '<div class="newEventDescription">';
                                 form += '<span>';
                                     form += '<h5>'+Language('WhatIsAnEvent',0)+'</h5>';
@@ -79,7 +79,7 @@ function createNewEvent(source){
     //Define the data source
     if(source == 'demo'){
         totalEvents = Language('demoEvents',0).length;
-        document.getElementById("demo").innerHTML = "";
+        document.getElementById("demo").innerHTML = ""; //Hide "Load Demo Events" button
     } else {
         totalEvents = 1;
     }
@@ -155,9 +155,9 @@ function newEventLayout(info){
     //Event layout and creator
     var newItem = '';
 
-    newItem += '<div class="eventItem" id="event'+info['ID']+'" onclick="modalEvent(this.id)" data-toggle="" data-target="#modalEvent'+info['ID']+'">';
+    newItem += '<div class="eventOption" id="event'+info['ID']+'" onclick="modalEvent(this.id)" data-toggle="" data-target="#modalEvent'+info['ID']+'">';
     newItem +=    '<span class="title"><i class="fas '+info['Icon']+'"></i> <span id="eventName'+info['ID']+'">'+info['Name']+'</span></span>';
-    newItem +=    '<span id="eventDescription'+info['ID']+'" class="comment">'+info['Description']+'</span>';
+    newItem +=    '<span id="eventDescription'+info['ID']+'" class="hidden">'+info['Description']+'</span>';
     newItem +=    '<span id="eventBtn1'+info['ID']+'" class="hidden">'+info['Btn1']+'</span>';
     newItem +=    '<span id="eventBtn2'+info['ID']+'" class="hidden">'+info['Btn2']+'</span>';
     newItem +=    '<span id="eventBtn3'+info['ID']+'" class="hidden">'+info['Btn3']+'</span>';

@@ -26,7 +26,7 @@ body{
     height: 220px;
     /* Ratio w/h = 2.02*/
 
-    background: url("../imgs/eventBackground.png");
+    background: url("../img/eventBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -90,5 +90,5 @@ body{
     background-image:none;
 }
 .showBtn{
-    background: url("../imgs/eventBtn.png");
+    background: url("../img/eventBtn.png");
 }

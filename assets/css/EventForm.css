@@ -4,6 +4,32 @@
     margin:5px;
 }
 
+/*Frame layout*/
+
+#NewEvent .mainSec{
+    background:#E1EBF7;
+    display: block;
+}
+
+.topNavForm{
+    display:block;
+
+    text-align: left;
+}
+
+.topNavForm strong{
+    font-size: 15px;
+    font-weight: bold;
+
+    padding-left:10px;
+}
+
+.topNavForm button{
+    margin-top:-10px;
+    margin-right: 10px;
+    padding: 0px;
+}
+
 /*Form New Event*/
 .newEvent{
     display:block;
@@ -49,11 +75,6 @@
     border:1px solid #D0D1D2;
 
     box-shadow: none;
-}
-
-#NewEvent .mainSec{
-    background:#E1EBF7;
-    display: block;
 }
 
 .formEvent{
