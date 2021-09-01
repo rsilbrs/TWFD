@@ -26,7 +26,7 @@ function Language(item, type){
 
 
 var ENG = {
-    "CreateNewEvent":   "Create new event",
+    "CreateNewEvent":   "Create New Event",
     "AvailableEvents":  "Available Events",
     "BarcodeEvents":    "Barcode Events",
     "InfoEvents":       "Info Events",
@@ -35,19 +35,19 @@ var ENG = {
     "ProgramFlow":      "Program Flow",
     "CreateANewEvent":  "Create a new event",
     "WhatIsAnEvent":    "What is an event?",
-    "EventExplanation": "Events allow you to give specific input about the process, for instance, via barcodes. Events can be used to personalize messages that will request some action from the operator during the procedure.",
+    "EventExplanation": "An event allows you to get specific input about a procedure from the operator, for example by requiring a barcode scan. Events can also be used to personalize messages that will request some action from the operator during the procedure.",
     "EventTypeTitle": 	"The types of Events available at TOMEs are:",
     "EventType1":		"Request the capture of information with a barcode scan",
-    "EventType2":		"Request the capture of some information by selecting a button on the Trima screen",
-    "EventType3":		"Provide some information/guidance to the operator",
+    "EventType2":		"Request the capture of some information by selecting a button on the Trima Accel screen",
+    "EventType3":		"Provide information or instructions to the operator",
     "EventType4":		"Provide a timer for the operator to perform some activity",
-    "EventType": 		"How do you want Trima to help you?",
-    "EventBarcode": 	"Request information via barcode",
-    "EventButton":	 	"Request information via on-screen button",
+    "EventType": 		"How do you want Trima Accel to help you?",
+    "EventBarcode": 	"Require information via barcode",
+    "EventButton":	 	"Require information via on-screen button",
     "EventInfo": 		"Inform the operator via the Trima Screen",
     "EventTimer":	 	"Provide a Timer",
     "EventName": 		"What is the name of this event?",
-    "EventDescription": "Provide a description of that event",
+    "EventDescription": "Provide a description of this event",
     "EventButtonTitle": "Enter the options that will be available on the screen",
     "EventTimerTitle":  "What is the timer interval/duration?",
 	"EventInfoOk":		"Ok",
@@ -73,7 +73,7 @@ var ENG = {
 	"demoEvents":[
 		[
 			"Barcode",
-			"Lot ACD-A",
+			"ACD-A Lot",
 			"Please scan the ACD-A lot number",
 			["Cancel","","","",""]
 		],
@@ -90,13 +90,13 @@ var ENG = {
 		],
 		[
 			"Barcode",
-			"Sample tubes",
+			"Sample Tubes",
 			"Please scan the barcode on each sample tube",
 			["Cancel","","","",""]
 		],
 		[
 			"Barcode",
-			"Tubing set Lot",
+			"Tubing Set Lot",
 			"Please scan the tubing set lot number ",
 			["Cancel","","","",""]
 		],
@@ -132,7 +132,7 @@ var ENG = {
 		],
 		[
 			"Timer",
-			"Donor Confortable",
+			"Donor Confort",
 			"Please verify that the donor is comfortable",
 			["10","00","","",""],
 		],
