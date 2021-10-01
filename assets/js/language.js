@@ -132,7 +132,7 @@ var ENG = {
 		],
 		[
 			"Timer",
-			"Donor Confort",
+			"Donor Comfort",
 			"Please verify that the donor is comfortable",
 			["10","00","","",""],
 		],
