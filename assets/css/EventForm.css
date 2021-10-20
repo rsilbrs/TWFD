@@ -91,6 +91,7 @@
     color:#04408C;
     font-weight: bold;
     text-align: right;
+    margin-right:10px;
 }
 
 .formEvent input, .formEvent select{

@@ -205,8 +205,8 @@ function eventUpdateForm(eventClass){
         newForm += '<div class="row newSection">';
         newForm +=      '<div class="col-12">';
         newForm +=          '<label for="inputState" class="col-5">'+Language('EventTimerTitle',0)+'</label>';
-        newForm +=          '<input type="text" id="eventTimerMm" class="col-1 center" placeholder="mm" maxlength="2" type="number">';
-        newForm +=          '<input type="text" id="eventTimerSs" class="col-1 center" placeholder="ss" maxlength="2" type="number">';
+        newForm +=          '<input type="number" id="eventTimerMm" class="col-1 center" placeholder="mm" min="0" max="60">';
+        newForm +=          '<input type="number" id="eventTimerSs" class="col-1 center" placeholder="ss" min="0" max="60">';
         newForm +=      '</div>';
         newForm += '</div>';        
     }
