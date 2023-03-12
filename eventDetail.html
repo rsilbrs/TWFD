@@ -23,64 +23,75 @@
         </div>
     </main>
 </body>
-<script>
-    //Definitions
-        var eventBtn = '';
-        var hidenBtn = '';
-        var countBtn = 0;
+    <script>
+        //Definitions
+            var eventBtn = '';
+            var hidenBtn = '';
+            var countBtn = 0;
 
-    //Get informations from URL
-        var url                 = new URL(window.location.href);
-        var procedureStep       = url.searchParams.get("Step");
-        var eventName           = url.searchParams.get("Name");
-        var eventDescription    = url.searchParams.get("Description");
-        var eventClass          = url.searchParams.get("Class");
-        var language            = url.searchParams.get("lg");
+        //Get informations from URL
+            var url                 = new URL(window.location.href);
+            var procedureStep       = url.searchParams.get("Step");
+            var eventName           = url.searchParams.get("Name");
+            var eventDescription    = url.searchParams.get("Description");
+            var eventClass          = url.searchParams.get("Class");
+            var language            = url.searchParams.get("lg");
 
-        var Btn1               = url.searchParams.get("Btn1");
-        var Btn2               = url.searchParams.get("Btn2");
-        var Btn3               = url.searchParams.get("Btn3");
-        var Btn4               = url.searchParams.get("Btn4");
-        var Btn5               = url.searchParams.get("Btn5");
+            var Btn1               = url.searchParams.get("Btn1");
+            var Btn2               = url.searchParams.get("Btn2");
+            var Btn3               = url.searchParams.get("Btn3");
+            var Btn4               = url.searchParams.get("Btn4");
+            var Btn5               = url.searchParams.get("Btn5");
 
-        var timerMM            = url.searchParams.get("timerMM");
-        var timerSS            = url.searchParams.get("timerSS");
-    //Define Background
-        document.getElementById("backgroundProcedure").style = 'background-image: url("main/imgs/'+language+'/'+procedureStep+'.png")';
-    //Chech Button events
-        if(eventClass == 'Info'){
-            eventBtn += '<ul>';
+            var timerMM            = url.searchParams.get("timerMM");
+            var timerSS            = url.searchParams.get("timerSS");
+        //Define Background
+            document.getElementById("backgroundProcedure").style = 'background-image: url("main/imgs/'+language+'/'+procedureStep+'.png")';
+        //Chech Button events
+            if(eventClass == 'Info'){
+                eventBtn += '<ul>';
 
-            for(var i=1; i<=5; i++){
-                
-                if(window["Btn"+i] == ""){
-                    hidenBtn = 'hiden';
-                    countBtn = countBtn + 1;
-                } else {
-                    hidenBtn = 'showBtn';
+                for(var i=1; i<=5; i++){
+                    
+                    if(window["Btn"+i] == ""){
+                        hidenBtn = 'hiden';
+                        countBtn = countBtn + 1;
+                    } else {
+                        hidenBtn = 'showBtn';
+                    }
+                    eventBtn += '<li id="Btn'+i+'" class="'+hidenBtn+'">'+window["Btn"+i]+'</li>';
+                   
                 }
-                eventBtn += '<li id="Btn'+i+'" class="'+hidenBtn+'">'+window["Btn"+i]+'</li>';
-               
+
+                eventBtn += '</ul>';
             }
 
-            eventBtn += '</ul>';
-        }
+        //Populate the values
+            document.getElementById("eventTitle").innerHTML = eventName;
+            document.getElementById("eventMessage").innerHTML = eventDescription;
+            document.getElementById("eventButton").innerHTML = eventBtn;
 
-    //Populate the values
-        document.getElementById("eventTitle").innerHTML = eventName;
-        document.getElementById("eventMessage").innerHTML = eventDescription;
-        document.getElementById("eventButton").innerHTML = eventBtn;
+        //Info Event without Btns
+        if(countBtn == 5){
+                document.getElementById('Btn3').innerHTML = Language('EventInfoOk',0);
+                document.getElementById('Btn3').setAttribute("class", "showBtn");
 
-    //Info Event without Btns
-    if(countBtn == 5){
-            document.getElementById('Btn3').innerHTML = Language('EventInfoOk',0);
-            document.getElementById('Btn3').setAttribute("class", "showBtn");
-
-            console.log(getLanguage())
-        }
-    //Timer Event - Create Timer
-        if(eventClass == "Timer"){
-            document.getElementById("eventMessage").innerHTML = document.getElementById("eventMessage").innerHTML + "<b>"+timerMM+":"+timerSS+"</b>";
-        }
-</script>
+                console.log(getLanguage())
+            }
+        //Timer Event - Create Timer
+            if(eventClass == "Timer"){
+                document.getElementById("eventMessage").innerHTML = document.getElementById("eventMessage").innerHTML + "<b>"+timerMM+":"+timerSS+"</b>";
+            }
+    </script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3403982,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </html>
